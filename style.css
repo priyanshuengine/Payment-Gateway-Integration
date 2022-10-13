@@ -92,7 +92,7 @@ html{
 }
 
 .showcase{
-    background-image: url('./images/background.jpg');
+    background-image: url('./images/bgg.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -147,13 +147,14 @@ html{
 
 /* Showcase content section */
 .showcase-text{
-    max-width: 800px;
+    max-width: 700px;
     padding-top: 250px;
-    padding-left: 120px;
+    padding-left: 8px;
     color: #fff;
 }
  .showcase-text .text-1{
-    font-size: 27px;
+    font-size: 30px;
+    color: #483D8B;
 }
 .showcase-text .text-2{
     font-size: 75px;
