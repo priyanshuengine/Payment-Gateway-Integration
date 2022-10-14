@@ -1,66 +1,29 @@
-$(document).ready(function(){
-
-    $(window).scroll(function(){
-
-        if(this.scrollY > 200){
-            $('.navbar').addClass("sticky");
-            }else{
-                $('.navbar').removeClass("sticky");
-                }
-
-          // Scrolling Button Btn
-          if(this.scrollY >500){
-            $('.scroll-up-btn').addClass("show");
-            }else{
-            $('.scroll-up-btn').removeClass("show");
-            }   
+	// Sticky Navbar
+    let header = document.querySelector('header');
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+     
+     
+    window.addEventListener('scroll', () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
     });
-
-    
-
-    //slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop:0});
-    });
-
-    // owl carousel animation
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop:true,
-        navigation:true,
-        autoplay: true,
-        autoplayTimeOut: 1000,
-        autoplayHoverPause: true,
-
-        responsive: {
-            0:{
-                items:1,
-                nav:false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
+     
+    menu.onclick = () => {
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    }
+     
+    // Dark Mode
+    let darkmode = document.querySelector('#darkmode');
+     
+    darkmode.onclick = () => {
+        if(darkmode.classList.contains('bx-moon')){
+            darkmode.classList.replace('bx-moon','bx-sun');
+            document.body.classList.add('active');
+        }else{
+            darkmode.classList.replace('bx-sun','bx-moon');
+            document.body.classList.remove('active');
         }
-    });
- 
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
