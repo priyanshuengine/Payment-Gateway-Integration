@@ -130,6 +130,6 @@ Distributed under the MIT License. See [LICENSE](https://github.com/https://priy
 
 ## Acknowledgements
 
-* [ShaanCoding](https://github.com/ShaanCoding/)
-* [Othneil Drew](https://github.com/othneildrew/Best-README-Template)
-* [ImgShields](https://shields.io/)
+* [Priyanshu Chaturvedi](https://github.com/priyanshuengine)
+* []()
+* []()
