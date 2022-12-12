@@ -129,5 +129,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/https://priy
 ## Acknowledgements
 
 * [Priyanshu Chaturvedi](https://github.com/priyanshuengine)
-* []()
-* []()
+
